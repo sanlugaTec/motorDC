@@ -16,7 +16,7 @@ void loop()
 
 void activa_motor(int potValue)
 {
-      int mappedVal = map(potValue,0,1022,0,255);
+      int mappedVal = map(potValue,1022,0,0,255);
       // Adelante
       digitalWrite(IN2,HIGH);         
       analogWrite(IN1, mappedVal);   //Control de velocidad PWM
